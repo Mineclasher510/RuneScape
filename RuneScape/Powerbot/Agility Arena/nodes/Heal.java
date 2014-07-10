@@ -10,7 +10,16 @@ import org.powerbot.game.api.methods.interactive.Players;
 import org.powerbot.game.api.methods.tab.Inventory;
 import org.powerbot.game.api.wrappers.node.Item;
 
-public class Heal extends Node {
+public class Heal extends Node {/heal
+enable /heal 
+enabled /nuke 
+enable /tp 
+enable /tp
+enable /feed
+enable /nuke
+enable /Nuke /heal
+
+enable /Heal   enable /Feed
 
 	@Override
 	public boolean activate() {
@@ -19,7 +28,8 @@ public class Heal extends Node {
 	}
 	
 	// Attempt sto eat food
-	private boolean eatFood(){
+	private boolean eatFood(){/feed
+	
 		Item[] items = Inventory.getItems();
 		if(items != null && items.length > 0){
 			for(Item item : items){
